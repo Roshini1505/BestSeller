@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bestseller</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="users.html">Users</a>
+        <a href="products.html">Products</a>
+        <a href="orders.html">Orders</a>
+      </nav>
+    </header>
+    <div class="welcome-message">Welcome to Bestseller!</div>
+    <main>
+      <section class="stats">
+        <div id="user-count" class="stat-box" data-type="users">
+          <h3>0</h3>
+          <p>Users</p>
+        </div>
+        <div id="product-count" class="stat-box" data-type="products">
+          <h3>0</h3>
+          <p>Products</p>
+        </div>
+        <div id="order-count" class="stat-box" data-type="orders">
+          <h3>0</h3>
+          <p>Orders</p>
+        </div>
+      </section>
+      <div id="details" style="display: none">
+        <h2 id="detail-title"></h2>
+        <table id="detail-table">
+          <thead>
+            <tr id="detail-header"></tr>
+          </thead>
+          <tbody id="detail-body"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; Made By RoshiniSivakumar</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

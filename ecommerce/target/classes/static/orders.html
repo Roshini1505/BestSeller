@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Bestseller</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="users.html">Users</a>
+        <a href="products.html">Products</a>
+        <a href="orders.html">Orders</a>
+      </nav>
+    </header>
+    <main>
+      <form id="orderForm">
+        <input
+          type="text"
+          id="userSearch"
+          placeholder="User Name"
+          required
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          id="productSearch"
+          placeholder="Product Name"
+          required
+          autocomplete="off"
+        />
+        <input type="number" id="qty" placeholder="Quantity" required />
+        <button type="submit">Place Order</button>
+      </form>
+      <table id="orderTable">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>User</th>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Total</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="js/orders.js"></script>
+  </body>
+</html>
